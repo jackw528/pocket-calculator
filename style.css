@@ -1,0 +1,65 @@
+body{
+  background-image: linear-gradient(90deg, lightgreen, green);
+}
+#buttonNine{
+  position: absolute;
+  left: 300px;
+  top: 100px;
+}
+#buttonEight{
+  position: absolute;
+  left: 500px;
+  top: 100px;
+}
+#buttonSeven{
+  position: absolute;
+  left: 700px;
+  top: 100px;
+}
+#buttonSix{
+  position: absolute;
+  left: 300px;
+  top: 300px;
+}
+#buttonFive{
+  position: absolute;
+  left: 500px;
+  top: 300px;
+}
+#buttonFour{
+  position: absolute;
+  left: 700px;
+  top: 300px;
+}
+#buttonThree{
+  position: absolute;
+  left: 300px;
+  top: 500px;
+}
+#buttonTwo{
+  position: absolute;
+  left: 500px;
+  top: 500px;
+}
+#buttonOne{
+  position: absolute;
+  left: 700px;
+  top: 500px;
+}
+#buttonZero{
+  position: absolute;
+  left: 300px;
+  top: 700px;
+  width: 600px;
+}
+button:hover{
+  background-color: darkgray;
+  color: black;
+}
+.numberButtons{
+  height: 200px;
+  width: 200px;
+  color: white;
+  background-color: black;
+  font-size: 48px;
+}
