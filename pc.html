@@ -3,18 +3,27 @@
   <head>
     <title>Pocket Calculator</title>
     <script type="text/javascript" src="calculator.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <button id="buttonNine" class="numberButtons" onclick="buttonNine()">9</button>
-    <button id="buttonEight" class="numberButtons" onclick="buttonEight()">8</button>
-    <button id="buttonSeven" class="numberButtons" onclick="buttonSeven()">7</button>
-    <button id="buttonSix" class="numberButtons" onclick="buttonSix()">6</button>
-    <button id="buttonFive" class="numberButtons" onclick="buttonFive()">5</button>
-    <button id="buttonFour" class="numberButtons" onclick="buttonFour()">4</button>
-    <button id="buttonThree" class="numberButtons" onclick="buttonThree()">3</button>
-    <button id="buttonTwo" class="numberButtons" onclick="buttonTwo()">2</button>
-    <button id="buttonOne" class="numberButtons" onclick="buttonOne()">1</button>
-    <button id="buttonZero" class="numberButtons" onclick="buttonZero()">0</button>
+    <button id="buttonNine" class="numberButtons rowTwo columnThree" onclick="buttonNine()">9</button>
+    <button id="buttonEight" class="numberButtons rowTwo columnTwo" onclick="buttonEight()">8</button>
+    <button id="buttonSeven" class="numberButtons rowTwo columnOne" onclick="buttonSeven()">7</button>
+    <button id="buttonSix" class="numberButtons rowThree columnThree" onclick="buttonSix()">6</button>
+    <button id="buttonFive" class="numberButtons rowThree columnTwo" onclick="buttonFive()">5</button>
+    <button id="buttonFour" class="numberButtons rowThree columnOne" onclick="buttonFour()">4</button>
+    <button id="buttonThree" class="numberButtons rowFour columnThree" onclick="buttonThree()">3</button>
+    <button id="buttonTwo" class="numberButtons rowFour columnTwo" onclick="buttonTwo()">2</button>
+    <button id="buttonOne" class="numberButtons rowFour columnOne" onclick="buttonOne()">1</button>
+    <button id="buttonZero" class="numberButtons rowFive columnOne" onclick="buttonZero()">0</button>
+    <button id="buttonPeriod" class="numberButtons rowFive columnThree" onclick="buttonPeriod()">.</button>
+    <button id="buttonEquals" class="numberButtons rowFive columnFour" onclick="buttonEquals()">=</button>
+    <button id="buttonPlus" class="numberButtons rowFour columnFour" onclick="buttonPlus()">+</button>
+    <button id="buttonMinus" class="numberButtons rowThree columnFour" onclick="buttonMinus()">-</button>
+    <button id="buttonTimes" class="numberButtons rowTwo columnFour" onclick="buttonTimes()">x</button>
+    <button id="buttonDivide" class="numberButtons rowOne columnFour" onclick="buttonDivide()">÷</button>
+    <button id="buttonPercent" class="numberButtons rowOne columnThree" onclick="buttonPercent()">%</button>
+    <button id="buttonNegative" class="numberButtons rowOne columnTwo" onclick="buttonNegative()">+/-</button>
+    <button id="buttonClear" class="numberButtons rowOne columnOne" onclick="buttonClear()">C</button>
   </body>
 </html>
