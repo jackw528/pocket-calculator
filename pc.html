@@ -5,7 +5,11 @@
     <script type="text/javascript" src="calculator.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
+    <form name="calc">
+      <input name="display" disabled>
+    </form>
     <button id="buttonNine" class="numberButtons rowTwo columnThree" onclick="buttonNine()">9</button>
     <button id="buttonEight" class="numberButtons rowTwo columnTwo" onclick="buttonEight()">8</button>
     <button id="buttonSeven" class="numberButtons rowTwo columnOne" onclick="buttonSeven()">7</button>
@@ -17,13 +21,13 @@
     <button id="buttonOne" class="numberButtons rowFour columnOne" onclick="buttonOne()">1</button>
     <button id="buttonZero" class="numberButtons rowFive columnOne" onclick="buttonZero()">0</button>
     <button id="buttonPeriod" class="numberButtons rowFive columnThree" onclick="buttonPeriod()">.</button>
-    <button id="buttonEquals" class="numberButtons rowFive columnFour" onclick="buttonEquals()">=</button>
-    <button id="buttonPlus" class="numberButtons rowFour columnFour" onclick="buttonPlus()">+</button>
-    <button id="buttonMinus" class="numberButtons rowThree columnFour" onclick="buttonMinus()">-</button>
-    <button id="buttonTimes" class="numberButtons rowTwo columnFour" onclick="buttonTimes()">x</button>
-    <button id="buttonDivide" class="numberButtons rowOne columnFour" onclick="buttonDivide()">÷</button>
-    <button id="buttonPercent" class="numberButtons rowOne columnThree" onclick="buttonPercent()">%</button>
-    <button id="buttonNegative" class="numberButtons rowOne columnTwo" onclick="buttonNegative()">+/-</button>
-    <button id="buttonClear" class="numberButtons rowOne columnOne" onclick="buttonClear()">C</button>
+    <button id="buttonEquals" class="useButtons rowFive columnFour" onclick="buttonEquals()">=</button>
+    <button id="buttonPlus" class="useButtons rowFour columnFour" onclick="buttonPlus()">+</button>
+    <button id="buttonMinus" class="useButtons rowThree columnFour" onclick="buttonMinus()">-</button>
+    <button id="buttonTimes" class="useButtons rowTwo columnFour" onclick="buttonTimes()">x</button>
+    <button id="buttonDivide" class="useButtons rowOne columnFour" onclick="buttonDivide()">÷</button>
+    <button id="buttonPercent" class="useButtons rowOne columnThree" onclick="buttonPercent()">%</button>
+    <button id="buttonNegative" class="useButtons rowOne columnTwo" onclick="buttonNegative()">+/-</button>
+    <button id="buttonClear" class="useButtons rowOne columnOne" onclick="buttonClear()">C</button>
   </body>
 </html>
