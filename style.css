@@ -8,7 +8,7 @@ button:hover{
   background-color: black;
   color: lightgreen;
   border-color: lightgreen;
-  transition-duration: 0.69s;
+  transition-duration: 0.6s;
 }
 .numberButtons{
   height: 125px;
@@ -69,4 +69,7 @@ input{
   border-color: black;
   border-left: 0px;
   border-top: 0px;
+  color: lightgreen;
+  text-align: right;
+  font-size: 60px;
 }
