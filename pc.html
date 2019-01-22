@@ -1,33 +1,88 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <title>Pocket Calculator</title>
-    <script type="text/javascript" src="calculator.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script type="text/javascript" src="pc.js"></script>
   </head>
+    <div class="header">
+      <h1>Pocket Calculator</h1>
+    </div>
+  <body onload = extraClean();>
+    <div>
+      <p id = "total"></p>
+    </div>
+</body>
 
-  <body>
-    <form name="calc">
-      <input name="display" disabled>
-    </form>
-    <button id="buttonNine" class="numberButtons rowTwo columnThree" onclick="insert(9)">9</button>
-    <button id="buttonEight" class="numberButtons rowTwo columnTwo" onclick="insert(8)">8</button>
-    <button id="buttonSeven" class="numberButtons rowTwo columnOne" onclick="insert(7)">7</button>
-    <button id="buttonSix" class="numberButtons rowThree columnThree" onclick="insert(6)">6</button>
-    <button id="buttonFive" class="numberButtons rowThree columnTwo" onclick="insert(5)">5</button>
-    <button id="buttonFour" class="numberButtons rowThree columnOne" onclick="insert(4)">4</button>
-    <button id="buttonThree" class="numberButtons rowFour columnThree" onclick="insert(3)">3</button>
-    <button id="buttonTwo" class="numberButtons rowFour columnTwo" onclick="insert(2)">2</button>
-    <button id="buttonOne" class="numberButtons rowFour columnOne" onclick="insert(1)">1</button>
-    <button id="buttonZero" class="numberButtons rowFive columnOne" onclick="insert(0)">0</button>
-    <button id="buttonPeriod" class="numberButtons rowFive columnThree" onclick="decimal('.');">.</button>
-    <button id="buttonEquals" class="useButtons rowFive columnFour" onclick="equal();">=</button>
-    <button id="buttonPlus" class="useButtons rowFour columnFour" onclick="insert('+'); clearOnOp();">+</button>
-    <button id="buttonMinus" class="useButtons rowThree columnFour" onclick="insert('-'); clearOnOp();">-</button>
-    <button id="buttonTimes" class="useButtons rowTwo columnFour" onclick="insert('*'); clearOnOp();">x</button>
-    <button id="buttonDivide" class="useButtons rowOne columnFour" onclick="insert('/'); clearOnOp();">÷</button>
-    <button id="buttonPercent" class="useButtons rowOne columnThree" onclick="pecentage():">%</button>
-    <button id="buttonNegative" class="useButtons rowOne columnTwo" onclick="negative():">+/-</button>
-    <button id="buttonClear" class="useButtons rowOne columnOne" onclick="clear()">C</button>
-  </body>
+<body>
+<div class = "grid">
+    <div id="1button" class="buttons rowFour columnOne">
+          <button onclick = "button1();">1</button>
+      </div>
+    <div id="2button" class="buttons rowFour columnTwo">
+          <button onclick = "button2();">2</button>
+      </div>
+    <div id="3button" class="buttons rowFour columnThree">
+          <button onclick = "button3();">3</button>
+      </div>
+    <div id="4button" class="buttons rowThree columnOne">
+            <button onclick = "button4();">4</button>
+        </div>
+    <div id="5button" class="buttons rowThree columnTwo">
+            <button onclick = "button5();">5</button>
+        </div>
+    <div id="6button" class="buttons rowThree columnThree">
+            <button onclick = "button6();">6</button>
+        </div>
+    <div id="7button" class="buttons rowTwo columnOne">
+            <button onclick = "button7();">7</button>
+        </div>
+    <div id="8button" class="buttons rowTwo columnTwo">
+            <button onclick = "button8();">8</button>
+        </div>
+
+    <div id="9button" class="buttons rowTwo columnThree">
+            <button onclick = "button9();">9</button>
+        </div>
+    <div id="0button" class="buttons rowFive columnOne">
+            <button onclick = "button0();" id="zero">0</button>
+        </div>
+    <div id="add" class="buttons rowFour columnFour">
+            <button onclick = "add();">+</button>
+        </div>
+    <div id="subtract" class="buttons rowThree columnFour">
+            <button onclick = "subtract();">-</button>
+        </div>
+    <div id="divide" class="buttons rowOne columnFour">
+            <button onclick = "divide();">÷</button>
+        </div>
+    <div id="multiply" class="buttons rowTwo columnFour">
+            <button onclick = "multiply();">×</button>
+        </div>
+    <div id = "equals" class="buttons rowFive columnFour">
+            <button onclick = "equals();">=</button>
+        </div>
+    <div id = "percentage" class="buttons rowOne columnThree">
+            <button onclick = "percentage();">%</button>
+        </div>
+    <div id = "negate" class="buttons rowOne columnTwo">
+            <button onclick = "negate();">+/-</button>
+        </div>
+    <div id = "clean" class="buttons rowOne columnOne">
+            <button onclick = "clean();">C</button>
+        </div>
+    <div id = "cleanTotal" class="buttons rowOne columnOne">
+          <button onclick = "extraClean();">AC</button>
+      </div>
+    <div id = "decimal" class="buttons rowFive columnThree">
+            <button onclick = "decimal();">.</button>
+      </div>
+      </body>
+</div>
+<body onload = 'extraClean();'>
+    <div class = "answer">
+          <p id = "display"> </p>
+        </div>
+</body>
 </html>
